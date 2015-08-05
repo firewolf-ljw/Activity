@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="mycvc" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="Activity" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="120.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="120.5"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2bO-7S-FtG">
+                        <rect key="frame" x="11" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="75c-JW-NXb"/>
+                            <constraint firstAttribute="width" constant="60" id="zsW-Nc-Sqs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-20-b8B">
+                        <rect key="frame" x="0.0" y="63" width="82" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="2bO-7S-FtG" firstAttribute="centerX" secondItem="U0d-20-b8B" secondAttribute="centerX" id="80F-7d-DHN"/>
+                <constraint firstAttribute="centerX" secondItem="2bO-7S-FtG" secondAttribute="centerX" id="9Oc-Vf-8Tl"/>
+                <constraint firstItem="U0d-20-b8B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="D13-hd-KoT"/>
+                <constraint firstItem="2bO-7S-FtG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hJ0-xg-tq7"/>
+                <constraint firstItem="2bO-7S-FtG" firstAttribute="centerX" secondItem="U0d-20-b8B" secondAttribute="centerX" id="iR7-uh-UAi"/>
+                <constraint firstItem="U0d-20-b8B" firstAttribute="top" secondItem="2bO-7S-FtG" secondAttribute="bottom" constant="3" id="qwh-f9-u42"/>
+                <constraint firstAttribute="trailing" secondItem="U0d-20-b8B" secondAttribute="trailing" id="woW-WW-ztO"/>
+            </constraints>
+            <size key="customSize" width="82" height="120.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="iR7-uh-UAi"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="image" destination="2bO-7S-FtG" id="6vQ-6m-BqS"/>
+                <outlet property="subject" destination="U0d-20-b8B" id="wZw-HX-Oak"/>
+            </connections>
+            <point key="canvasLocation" x="366" y="335.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon.png" width="120" height="120"/>
+    </resources>
+</document>
