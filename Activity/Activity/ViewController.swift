@@ -41,7 +41,8 @@ class ViewController: UIViewController {
         ]
         
         popView = MyPopoverView(items: items)
-        popView?.show(self.view)
+//        popView?.show(self.view)
+        popView?.show(UIApplication.sharedApplication().windows.last as! UIView)
         
     }
     
